@@ -24,14 +24,9 @@ const ContactForm = () => {
   }
  })
 
- const onSubmit = (values: z.infer<typeof formSchema>) => {
-  console.log(values)
- }
-
  return (
   <Form {...form}>
    <form
-    onSubmit={form.handleSubmit(onSubmit)}
     className="max-w-md w-full mx-auto space-y-4"
     action="https://public.herotofu.com/v1/c6c2f510-d64f-11ee-afc9-dd7ac292df82"
     method="POST"
