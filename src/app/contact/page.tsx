@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form"
+import Form from "@/components/form"
 import Header from "@/components/header"
 import Main from "@/components/main"
 import Section from "@/components/section"
@@ -12,7 +12,7 @@ export default function Page() {
    </Header>
    <Main>
     <Section>
-     <ContactForm />
+     <Form />
     </Section>
    </Main>
   </>
