@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={plusJakartaSans.className}>
-        <GoogleAnalytics gaId="G-SJSXDE92X3" />
+        <GoogleAnalytics gaId="G-623J8MSMLL" />
         <Navbar />
         {children}
         <Footer />
