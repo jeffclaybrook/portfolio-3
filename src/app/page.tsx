@@ -22,7 +22,7 @@ export default function Home() {
         <p className="text-2xl lg:text-2xl mb-4 text-slate-300">and I&apos;m a <Typewriter /></p>
         <div className="flex items-center gap-4">
           <Button variant="custom" size="lg" asChild>
-            <a href="https://jeffclaybrook.s3.amazonaws.com/resume.min.pdf" target="_blank" rel="noreferrer">
+            <a href="https://jeffclaybrook.s3.amazonaws.com/Resume.pdf" target="_blank" rel="noreferrer">
               <Resume className="mr-2" />
               My Resume
             </a>
