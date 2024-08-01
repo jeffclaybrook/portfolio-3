@@ -4,7 +4,6 @@ import Card from "@/components/card"
 import Header from "@/components/header"
 import Main from "@/components/main"
 import Section from "@/components/section"
-import Transition from "@/components/transition"
 import Form from "@/components/form"
 import Project from "@/components/project"
 import Testimonial from "@/components/testimonial"
@@ -37,122 +36,104 @@ export default function Home() {
         </div>
       </Header>
       <Main>
-        <Transition>
-          <Section title="About" subtitle="A little bit about me and the things I dabble in">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
-              {about.map((item, i) => (
-                <Card
-                  key={i}
-                  title={item.title}
-                  icon={item.icon}
-                />
-              ))}
-            </div>
-            <div className="flex items-center justify-center mt-16">
-              <Button variant="customOutline" size="lg" asChild>
-                <Link href="/about">
-                  More About Me
-                  <ChevronRight />
-                </Link>
-              </Button>
-            </div>
-          </Section>
-        </Transition>
-        <Transition>
-          <Testimonial
-            quote={testimonials[0].quote}
-            name={testimonials[0].name}
-            title={testimonials[0].title}
-            image={testimonials[0].image}
-          />
-        </Transition>
-        <Transition>
-          <Section title="Skills" subtitle="I'm a Jeff of all trades">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
-              {skills.map((skill, i) => (
-                <Card
-                  key={i}
-                  title={skill.title}
-                  icon={skill.icon}
-                />
-              ))}
-            </div>
-            <div className="flex items-center justify-center mt-16">
-              <Button variant="customOutline" size="lg" asChild>
-                <Link href="/skills">
-                  More Skills
-                  <ChevronRight />
-                </Link>
-              </Button>
-            </div>
-          </Section>
-        </Transition>
-        <Transition>
-          <Testimonial
-            quote={testimonials[1].quote}
-            name={testimonials[1].name}
-            title={testimonials[1].title}
-            image={testimonials[1].image}
-          />
-        </Transition>
-        <Transition>
-          <Section title="Projects" subtitle="A few sample projects you can demo">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
-              {projects.map((project, i) => (
-                <Project
-                  key={i}
-                  title={project.title}
-                  href={project.href}
-                  image={project.image}
-                />
-              ))}
-            </div>
-            <div className="flex items-center justify-center mt-16">
-              <Button variant="customOutline" size="lg" asChild>
-                <Link href="/projects">
-                  More Projects
-                  <ChevronRight />
-                </Link>
-              </Button>
-            </div>
-          </Section>
-        </Transition>
-        <Transition>
-          <Testimonial
-            quote={testimonials[2].quote}
-            name={testimonials[2].name}
-            title={testimonials[2].title}
-            image={testimonials[2].image}
-          />
-        </Transition>
-        <Transition>
-          <Section title="Artboards" subtitle="Getting the most out of every pixel">
-            <div>
-              <Artboards />
-            </div>
-            <div className="flex items-center justify-center mt-16">
-              <Button variant="customOutline" size="lg" asChild>
-                <Link href="/artboards">
-                  More Artboards
-                  <ChevronRight />
-                </Link>
-              </Button>
-            </div>
-          </Section>
-        </Transition>
-        <Transition>
-          <Testimonial
-            quote={testimonials[3].quote}
-            name={testimonials[3].name}
-            title={testimonials[3].title}
-            image={testimonials[3].image}
-          />
-        </Transition>
-        <Transition>
-          <Section title="Contact" subtitle="Let's get in touch!">
-            <Form />
-          </Section>
-        </Transition>
+        <Section title="About" subtitle="A little bit about me and the things I dabble in">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
+            {about.map((item, i) => (
+              <Card
+                key={i}
+                title={item.title}
+                icon={item.icon}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/about">
+                More About Me
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[0].quote}
+          name={testimonials[0].name}
+          title={testimonials[0].title}
+          image={testimonials[0].image}
+        />
+        <Section title="Skills" subtitle="I'm a Jeff of all trades">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {skills.map((skill, i) => (
+              <Card
+                key={i}
+                title={skill.title}
+                icon={skill.icon}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/skills">
+                More Skills
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[1].quote}
+          name={testimonials[1].name}
+          title={testimonials[1].title}
+          image={testimonials[1].image}
+        />
+        <Section title="Projects" subtitle="A few sample projects you can demo">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3.5">
+            {projects.map((project, i) => (
+              <Project
+                key={i}
+                title={project.title}
+                href={project.href}
+                image={project.image}
+              />
+            ))}
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/projects">
+                More Projects
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[2].quote}
+          name={testimonials[2].name}
+          title={testimonials[2].title}
+          image={testimonials[2].image}
+        />
+        <Section title="Artboards" subtitle="Getting the most out of every pixel">
+          <div>
+            <Artboards />
+          </div>
+          <div className="flex items-center justify-center mt-16">
+            <Button variant="customOutline" size="lg" asChild>
+              <Link href="/artboards">
+                More Artboards
+                <ChevronRight />
+              </Link>
+            </Button>
+          </div>
+        </Section>
+        <Testimonial
+          quote={testimonials[3].quote}
+          name={testimonials[3].name}
+          title={testimonials[3].title}
+          image={testimonials[3].image}
+        />
+        <Section title="Contact" subtitle="Let's get in touch!">
+          <Form />
+        </Section>
       </Main>
     </>
   )
