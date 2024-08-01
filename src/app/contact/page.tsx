@@ -2,6 +2,7 @@ import Form from "@/components/form"
 import Header from "@/components/header"
 import Main from "@/components/main"
 import Section from "@/components/section"
+import Transition from "@/components/transition"
 
 export default function Page() {
  return (
@@ -11,9 +12,11 @@ export default function Page() {
     <p className="text-2xl lg:text-2xl mb-4 text-slate-300">Fill out the form below to get in touch</p>
    </Header>
    <Main>
-    <Section>
-     <Form />
-    </Section>
+    <Transition>
+     <Section>
+      <Form />
+     </Section>
+    </Transition>
    </Main>
   </>
  )
