@@ -15,8 +15,8 @@ const Footer = () => {
      </li>
     ))}
    </ul>
-   <p className="text-xs mb-2">Built using NextJS, TailwindCSS, DaisyUI, Framer Motion, and shadcn/ui</p>
-   <p className="text-xs">© 2024 Jeffrey Claybrook</p>
+   <p className="text-xs text-center mb-2">Built using NextJS, TailwindCSS, DaisyUI, Framer Motion, and shadcn/ui</p>
+   <p className="text-xs text-center">© 2024 Jeffrey Claybrook</p>
   </footer>
  )
 }
