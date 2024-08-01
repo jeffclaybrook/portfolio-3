@@ -12,7 +12,8 @@ import ChevronRight from "@/components/icons/ChevronRight"
 import Resume from "@/components/icons/Resume"
 import Github from "@/components/icons/Github"
 import { Button } from "@/components/ui/button"
-import { about, skills, projects, testimonials } from "@/lib/data"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { about, skills, projects, testimonials, faqs } from "@/lib/data"
 
 export default function Home() {
   return (
@@ -130,6 +131,22 @@ export default function Home() {
           name={testimonials[3].name}
           title={testimonials[3].title}
           image={testimonials[3].image}
+        />
+        <Section title="FAQs" subtitle="Frequently asked questions">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((item, i) => (
+              <AccordionItem value={item.value} key={i}>
+                <AccordionTrigger>{item.question}</AccordionTrigger>
+                <AccordionContent>{item.response}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </Section>
+        <Testimonial
+          quote={testimonials[4].quote}
+          name={testimonials[4].name}
+          title={testimonials[4].title}
+          image={testimonials[4].image}
         />
         <Section title="Contact" subtitle="Let's get in touch!">
           <Form />

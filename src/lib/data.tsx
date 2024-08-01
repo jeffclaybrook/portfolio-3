@@ -105,6 +105,40 @@ export const testimonials = [
   title: "Owner & Founder, Lil Baghdad",
   quote: "Jeff Claybrook showed excellence in his work ethic and it was a pleasure and honor to work with an individual of his virtue and character.",
   image: "/images/hero-1.webp"
+ },
+ {
+  name: "Gwen Green",
+  title: "Former Instructor",
+  quote: "Jeff Claybrook jumps into every encounter, experience, task, etc. with feet, legs, arms, and heart. In other words he is non-stop! He is always respectful, courteous, and a gentleman.",
+  image: "/images/hero-2.webp"
+ }
+]
+
+export const faqs = [
+ {
+  value: "faq-1",
+  question: "Tell me about yourself.",
+  response: "I graduated from Texas A&M University in 2015 with a degree in political science and a minor in business administration. As a student, I served as communications executive vice president and eventually chief of staff for the student government association. I interned with a company called GovWhiz during my last semester and discovered a passion for UX/UI. Upon graduating, I was brought on full time by a partner company called Arena Edge, where I was a product manager for several years. I’m currently seeking a product development position with a focus on UX and frontend development."
+ },
+ {
+  value: "faq-2",
+  question: "What is your greatest strength?",
+  response: "Empathy and understanding where people come from."
+ },
+ {
+  value: "faq-3",
+  question: "What is your greatest weakness?",
+  response: "I sometimes have a hard time understanding abstract concepts. I am, however, good at recognizing patterns so to compensate, I apply what I know about patterns to a given concept and it becomes less abstract."
+ },
+ {
+  value: "faq-4",
+  question: "Why should I hire you?",
+  response: "I'm a utility player that can gracefully wear several different hats and I work well with other people. I have a broad range of experience, a positive attitude, and an eagerness to learn and be utilized."
+ },
+ {
+  value: "faq-5",
+  question: "Tell me about a time you were successful on a team.",
+  response: "I was a campaign manager for a student body president election and our campaign won with over 60% of the vote."
  }
 ]
 
