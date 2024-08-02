@@ -43,7 +43,7 @@ export const about = [
  { title: "UX/UI Design & Research", subtitle: "What started out as a hobby soon became a passion", icon: <UXDesignResearch /> },
  { title: "Content Creator", subtitle: "Created, scripted, and recorded various product and project tutorials", icon: <ContentCreator /> },
  { title: "QA and Debugging", subtitle: "Thoroughly tested and documented bugs and areas of improvement", icon: <QADebugging /> },
- { title: "Technical Writing", subtitle: "Authored a 175+ page user manual from scratch", icon: <TechnicalWriting /> }
+ { title: "Technical Writing", subtitle: "Authored a 170+ page user manual from scratch", icon: <TechnicalWriting /> }
 ]
 
 export const skills = [
@@ -139,6 +139,16 @@ export const faqs = [
   value: "faq-5",
   question: "Tell me about a time you were successful on a team.",
   response: "I was a campaign manager for a student body president election and our campaign won with over 60% of the vote."
+ },
+ {
+  value: "faq-6",
+  question: "What do you like to do outside of work?",
+  response: "I enjoy creating mini React applications as side projects, playing dominoes, spending time with friends and family, and taking my dog to the park."
+ },
+ {
+  value: "faq-7",
+  question: "Describe your most challenging project.",
+  response: "I had to create a user guide from scratch that included detailed descriptions of each feature of the platform, step-by-step instructions on how to use each feature, and supporting graphics/imagery of the platform. It ended up being 170+ pages long."
  }
 ]
 
