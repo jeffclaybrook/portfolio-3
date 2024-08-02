@@ -1,3 +1,5 @@
+import { Button } from "./ui/button"
+
 const Form = () => {
  return (
   <form
@@ -29,7 +31,7 @@ const Form = () => {
     className="textarea textarea-bordered textarea-lg"
     required
    />
-   <button type="submit" className="btn btn-primary">Submit</button>
+   <Button variant="custom">Submit</Button>
   </form>
  )
 }

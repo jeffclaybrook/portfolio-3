@@ -136,7 +136,7 @@ export default function Home() {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((item, i) => (
               <AccordionItem value={item.value} key={i}>
-                <AccordionTrigger>{item.question}</AccordionTrigger>
+                <AccordionTrigger className="text-start">{item.question}</AccordionTrigger>
                 <AccordionContent>{item.response}</AccordionContent>
               </AccordionItem>
             ))}
