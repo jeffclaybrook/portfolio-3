@@ -4,7 +4,7 @@ import Card from "@/components/card"
 import Header from "@/components/header"
 import Main from "@/components/main"
 import Section from "@/components/section"
-import Form from "@/components/form"
+import ContactForm from "@/components/form"
 import Project from "@/components/project"
 import Testimonial from "@/components/testimonial"
 import Typewriter from "@/components/typewriter"
@@ -149,7 +149,7 @@ export default function Home() {
           image={testimonials[4].image}
         />
         <Section title="Contact" subtitle="Let's get in touch!">
-          <Form />
+          <ContactForm />
         </Section>
       </Main>
     </>
