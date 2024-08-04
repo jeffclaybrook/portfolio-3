@@ -118,7 +118,7 @@ export const faqs = [
  {
   value: "faq-1",
   question: "Tell me about yourself.",
-  response: "I graduated from Texas A&M University in 2015 with a degree in political science and a minor in business administration. As a student, I served as communications executive vice president and eventually chief of staff for the student government association. I interned with a company called GovWhiz during my last semester and discovered a passion for UX/UI. Upon graduating, I was brought on full time by a partner company called Arena Edge, where I was a product manager for several years. I’m currently seeking a product development position with a focus on UX and frontend development."
+  response: "I graduated from Texas A&M University in 2015 with a degree in political science and a minor in business administration. As a student, I served as communications executive vice president and eventually chief of staff for the student government association. I interned with a company called Gov Whiz during my last semester and discovered a passion for UX/UI. Upon graduating, I was brought on full time by a partner company called Arena Edge, where I was a product manager for several years. During this time, I began learning the fundamentals of frontend development as a hobby. I’m currently seeking a product development position with a focus on UX and frontend development."
  },
  {
   value: "faq-2",
